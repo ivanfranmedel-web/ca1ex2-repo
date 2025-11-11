@@ -1,0 +1,16 @@
+git status 
+git add .
+git commit -m "Second commit"
+git checkout main 
+git checkout feature-local-test 
+git add .
+git commit -m "Second commit"
+git checkout main 
+git add .
+git commit -m "Third  commit"
+git merge feature-local-test 
+git remote add origin https://github.com/ivanfranmedel-web/ca1ex2-repo.git
+git push -u origin main 
+Get-History | ? CommandLine-match "git" | % CommandLine > ca1ex2.txt 
+Get-History | ?CommandLine-match "git" | %CommandLine > ca1ex2.txt 
+Get-History |?CommandLine-match "git" |%CommandLine > ca1ex2.txt 
